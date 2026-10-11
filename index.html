@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>КОДИК — питомеци виртуалии девелопер</title>
+  <meta name="description" content="Тамагочии интерактивӣ барои девелопер: энергия, кайфият, сифати код ва кофе. Нишондиҳандаҳо бо гузашти вақт кам мешаванд." />
+  <meta name="theme-color" content="#14110e" />
+  <meta property="og:title" content="КОДИК — питомеци виртуалии девелопер" />
+  <meta property="og:description" content="Аз кот-кодер, баг ё AI-бот ғамхорӣ кун. Кофе деҳ, код нависон, багҳоро ислоҳ кун ва хоб кун." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@500;700;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-arrive">
+  <div id="boot" class="boot" aria-hidden="true">
+    <div class="boot-card">
+      <p class="boot-kicker">system boot</p>
+      <h2>КОДИК</h2>
+      <div class="boot-bar" aria-hidden="true"><span></span></div>
+      <p class="boot-line">&gt; питомец бедор мешавад<span class="boot-cursor">_</span></p>
+    </div>
+  </div>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div id="glyphs" class="glyphs" aria-hidden="true"></div>
+  <div id="sky" class="sky" aria-hidden="true"></div>
+  <div class="gutter-life" aria-hidden="true">
+    <div class="gutter-col left">
+      <span class="gutter-bird a"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <span class="gutter-bird b"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <span class="gutter-bird c"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <i class="mote"></i><i class="mote"></i><i class="mote"></i>
+    </div>
+    <div class="gutter-col right">
+      <span class="gutter-bird a"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <span class="gutter-bird b"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <span class="gutter-bird c"><svg viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+      <i class="mote"></i><i class="mote"></i><i class="mote"></i>
+    </div>
+  </div>
+
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">тамагочи барои девелопер</p>
+        <h1>КОДИК</h1>
+      </div>
+    </header>
+
+    <section id="select" class="select">
+      <div class="cards" id="cards">
+        <button class="card" type="button" data-type="coder">
+          <div class="preview"></div>
+          <h2>Кодер</h2>
+          <p>Худи ту, танҳо хурдтар. Гӯшмонак ва ҳуди.</p>
+        </button>
+        <button class="card is-selected" type="button" data-type="cat" aria-pressed="true">
+          <div class="preview"></div>
+          <h2>Кот-кодер</h2>
+          <p>Мяу мекунад ва git push мекунад.</p>
+        </button>
+        <button class="card" type="button" data-type="bug">
+          <div class="preview"></div>
+          <h2>Баг</h2>
+          <p>Баги хуб: багҳои бадро ислоҳ мекунад.</p>
+        </button>
+        <button class="card" type="button" data-type="bot">
+          <div class="preview"></div>
+          <h2>AI-бот</h2>
+          <p>Бе кофе онлайн намешавад.</p>
+        </button>
+      </div>
+      <div class="name-row">
+        <label class="sr" for="pet-name-input" style="position:absolute;left:-999px">Номи питомец</label>
+        <div class="name-field">
+          <input id="pet-name-input" type="text" maxlength="16" placeholder="Мур" autocomplete="off" />
+          <div class="name-cat" aria-hidden="true">
+            <svg class="kitty" viewBox="0 0 72 36">
+              <path class="kitty-tail" d="M16 18 C8 16 6 8 12 6" fill="none" stroke="#ffb077" stroke-width="2.4" stroke-linecap="round"/>
+              <ellipse class="kitty-body" cx="30" cy="20" rx="16" ry="8"/>
+              <circle class="kitty-head" cx="48" cy="15" r="8"/>
+              <path class="kitty-ear" d="M42 10 L44 2 L48 9 Z"/>
+              <path class="kitty-ear" d="M50 9 L54 2 L56 11 Z"/>
+              <circle cx="51" cy="14" r="1.15" fill="#1a1408"/>
+              <path d="M54 17 L58 16" fill="none" stroke="#1a1408" stroke-width="1" stroke-linecap="round"/>
+              <g class="leg a"><path d="M22 26 L20 34" /></g>
+              <g class="leg b"><path d="M30 26 L32 34" /></g>
+              <g class="leg a"><path d="M38 26 L40 34" /></g>
+              <g class="leg b"><path d="M46 27 L48 34" /></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="start-row">
+        <button id="start-btn" class="start" type="button">Оғоз</button>
+        <button id="continue-btn" class="ghost" type="button" hidden>Идома</button>
+      </div>
+    </section>
+
+    <main id="app" class="layout" hidden>
+      <section class="shell" id="shell">
+        <header class="dash-head">
+          <div class="dash-brand">
+            <span id="led" class="led" aria-hidden="true"></span>
+            <div>
+              <div class="brand-mini">КОДИК</div>
+              <div class="model">dev pet</div>
+            </div>
+          </div>
+          <p class="dash-tag">питомеци виртуалии девелопер</p>
+          <div class="dash-tools">
+            <div class="screen-top dash-meta">
+              <div>
+                <span id="day-label">Рӯзи 1</span>
+                <strong id="pet-name">Мур</strong>
+                <span id="mood-chip">ором</span>
+              </div>
+              <div class="clock-wrap">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span id="clock">09:10</span>
+              </div>
+            </div>
+            <button id="mute" class="icon-btn" type="button" aria-label="Садо" aria-pressed="false">🔊</button>
+          </div>
+        </header>
+        <div class="dash" id="screen">
+          <section class="panel status-card" aria-label="Ҳолати питомец">
+            <h3 class="status-title"><span aria-hidden="true">📊</span> Ҳолати питомец</h3>
+            <div class="stats">
+              <div class="stat" id="stat-energy">
+                <div class="stat-top"><span class="stat-name"><span aria-hidden="true">⚡</span> Энергия</span><span class="val" id="val-energy">0</span></div>
+                <div class="bar"><div class="fill fill-energy" id="fill-energy"></div></div>
+              </div>
+              <div class="stat" id="stat-mood">
+                <div class="stat-top"><span class="stat-name"><span aria-hidden="true">😊</span> Кайфият</span><span class="val" id="val-mood">0</span></div>
+                <div class="bar"><div class="fill fill-mood" id="fill-mood"></div></div>
+              </div>
+              <div class="stat" id="stat-quality">
+                <div class="stat-top"><span class="stat-name"><span aria-hidden="true">💻</span> Сифати код</span><span class="val" id="val-quality">0</span></div>
+                <div class="bar"><div class="fill fill-quality" id="fill-quality"></div></div>
+              </div>
+              <div class="stat" id="stat-coffee">
+                <div class="stat-top"><span class="stat-name"><span aria-hidden="true">☕</span> Кофе</span><span class="val" id="val-coffee">0</span></div>
+                <div class="bar"><div class="fill fill-coffee" id="fill-coffee"></div></div>
+              </div>
+            </div>
+          </section>
+          <section class="panel hero-panel">
+            <p class="level-line" id="level-out">Сатҳ 1</p>
+            <div class="stage" id="stage">
+              <div class="halo" aria-hidden="true"></div>
+              <div class="halo-ring" aria-hidden="true"></div>
+              <div class="orbit" aria-hidden="true">
+                <span class="orbiter a"><svg class="orbit-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+                <span class="orbiter b"><svg class="orbit-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+                <span class="orbiter c"><svg class="orbit-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+                <span class="orbiter d"><svg class="orbit-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+              </div>
+              <canvas id="fx" aria-hidden="true"></canvas>
+              <div id="pet"></div>
+              <div id="bugs" class="bugs"></div>
+              <div id="zzz" class="zzz" hidden><span>z</span><span>z</span><span>Z</span></div>
+              <div class="paw-corner left" id="coffee-pal" aria-hidden="true">
+                <span class="joy">♥</span>
+                <svg class="rover" viewBox="0 0 88 42">
+                  <path class="rover-tail" d="M16 20 C6 16 4 8 10 6" fill="none" stroke="#8a4b24" stroke-width="2.6" stroke-linecap="round"/>
+                  <ellipse class="rover-body" cx="36" cy="22" rx="18" ry="9"/>
+                  <circle class="rover-head" cx="56" cy="16" r="8"/>
+                  <ellipse class="rover-ear" cx="50" cy="10" rx="3" ry="6"/>
+                  <circle cx="59" cy="15" r="1.2" fill="#1a1408"/>
+                  <ellipse cx="64" cy="17" rx="2.2" ry="1.5" fill="#1a1408"/>
+                  <g class="paw a"><path d="M26 28 L24 38"/></g>
+                  <g class="paw b"><path d="M34 29 L36 38"/></g>
+                  <g class="paw a"><path d="M44 29 L46 38"/></g>
+                  <g class="paw b"><path d="M52 28 L54 38"/></g>
+                </svg>
+              </div>
+              <div class="paw-corner right" id="talk-pal" aria-hidden="true">
+                <span class="joy">♥</span>
+                <svg class="hopper" viewBox="0 0 64 46">
+                  <ellipse class="hop-body" cx="30" cy="28" rx="14" ry="9"/>
+                  <circle class="hop-head" cx="44" cy="18" r="8"/>
+                  <ellipse class="hop-ear" cx="40" cy="8" rx="2.2" ry="7"/>
+                  <ellipse class="hop-ear" cx="47" cy="8" rx="2.2" ry="7"/>
+                  <circle cx="46" cy="17" r="1.1" fill="#1a1408"/>
+                  <path class="hop-foot" d="M18 34 C22 40 34 40 40 34" fill="none" stroke="#f4efe6" stroke-width="2.4" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div id="speech" class="speech" aria-live="polite"></div>
+            <form class="talk" id="talk-form">
+              <div class="talk-log" id="talk-log" aria-live="polite"></div>
+              <div class="talk-bar">
+                <label class="sr" for="talk-input">Ҷавоб</label>
+                <input id="talk-input" type="search" maxlength="80" placeholder="Бо питомец гап занед..." autocomplete="off" />
+                <button class="talk-send" type="submit">Фиристодан</button>
+              </div>
+            </form>
+            <div class="project">
+              <div class="term-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <p class="term-code"><span id="project-file">todo.jsx</span></p>
+              <div class="project-top">
+                <span id="project-title">Лоиҳа</span>
+                <span id="project-pct">0%</span>
+              </div>
+              <div class="bar"><div class="fill fill-project" id="project-fill"></div></div>
+              <p id="lines-out" class="term-done"></p>
+            </div>
+          </section>
+          <section class="panel act-panel">
+            <h3 class="panel-title"><span aria-hidden="true">🎮</span> Амалҳо</h3>
+            <div class="actions" id="actions">
+          <button class="act act-coffee" type="button" data-act="coffee">
+            <span class="btn-flock" aria-hidden="true"><svg class="btn-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg><svg class="btn-bird late" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+            <span class="act-ico" aria-hidden="true">☕</span>
+            <span class="act-title">Додани кофе</span>
+            <span class="act-hint">энергия ↑ · кофе ↑</span>
+          </button>
+          <button class="act act-code" type="button" data-act="code">
+            <span class="btn-flock" aria-hidden="true"><svg class="btn-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg><svg class="btn-bird late" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+            <span class="act-ico" aria-hidden="true">💻</span>
+            <span class="act-title">Навиштани код</span>
+            <span class="act-hint">лоиҳа ↑ · энергия ↓</span>
+          </button>
+          <button class="act act-bugs" type="button" data-act="bugs">
+            <span class="btn-flock" aria-hidden="true"><svg class="btn-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg><svg class="btn-bird late" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+            <span class="act-ico" aria-hidden="true">🐛</span>
+            <span class="act-title">Ислоҳи багҳо</span>
+            <span class="act-hint">кайфият ↑ · сифат ↑</span>
+          </button>
+          <button class="act act-sleep" type="button" data-act="sleep">
+            <span class="btn-flock" aria-hidden="true"><svg class="btn-bird" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg><svg class="btn-bird late" viewBox="0 0 90 48"><g class="wing"><path d="M38 26 C26 8 10 4 1 16 C16 18 28 22 38 26Z"/></g><path class="body" d="M34 28 C48 18 68 18 76 26 C66 34 48 36 34 28Z"/><circle class="head" cx="74" cy="23" r="4"/></svg></span>
+            <span class="act-ico" aria-hidden="true">😴</span>
+            <span class="act-title">Истироҳат</span>
+            <span class="act-hint">барқарорсозӣ</span>
+          </button>
+        </div>
+            <button id="new-game" class="shell-exit" type="button">Персонажи нав</button>
+          </section>
+        </div>
+        <div class="dash-bottom">
+          <section class="panel">
+            <h3 class="panel-title"><span aria-hidden="true">🏆</span> Дастовардҳо</h3>
+            <div id="achievements" class="badges"></div>
+          </section>
+          <section class="panel">
+            <h3 class="panel-title"><span aria-hidden="true">📓</span> Қайдҳо</h3>
+            <ul id="log"></ul>
+            <p id="session-out" class="session-line"></p>
+          </section>
+        </div>
+        <div id="crash" class="crash" hidden>
+          <p class="crash-kicker">SYSTEM CRASH</p>
+          <p>Питомец сӯхт. Ребут кун — ӯ боз мехезад.</p>
+          <button id="reboot" type="button">Ребут</button>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <div class="modal-actions">
+        <button id="modal-no" class="ghost" type="button">Не</button>
+        <button id="modal-yes" class="start" type="button">Ҳа</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/audio.js"></script>
+  <script src="js/characters.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
